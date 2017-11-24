@@ -38,6 +38,7 @@ CREATE TABLE `tb_datauser` (
 --
 
 INSERT INTO `tb_datauser` (`id`, `nama`, `email`, `password`) VALUES
+(3, 'faidatur', 'faidatur@gmail.com', 'faidaturr'),
 (2, 'basbas', 'basriumar@gmail.com', 'basriumar'),
 (1, 'geri', 'gerygilyia@gmail.com', 'gerygilyia');
 
