@@ -5,11 +5,10 @@
  {
  	$id = $_POST['id'];
  	$nama = $_POST['nama'];
- 	$usia = $_POST['email'];
- 	$domisili = $_POST['password'];
- 	$date = date('Y-m-d H:i:s');
+ 	$email = $_POST['email'];
+ 	$password = $_POST['password'];
 
- 	$query = "UPDATE  tb_datauser SET nama = '$nama',email = '$email', password = '$password', created='$date' WHERE id='$id'";
+ 	$query = "UPDATE  tb_datauser SET nama = '$nama',email = '$email', password = '$password' WHERE id='$id'";
 
  	$exeQuery = mysqli_query($konek, $query); 
 
