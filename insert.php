@@ -4,11 +4,10 @@
  if($_SERVER['REQUEST_METHOD'] == 'POST')
  {
  	$nama = $_POST['nama'];
- 	$usia = $_POST['email'];
- 	$domisili = $_POST['password'];
- 	$created = date('Y-m-d H:i:s');
+ 	$email = $_POST['email'];
+ 	$password = $_POST['password'];
 
- 	$query = "INSERT INTO tb_datauser (nama, email, password, date) VALUES ($nama','$email','$password','$created')";
+ 	$query = "INSERT INTO tb_datauser (nama, email, password) VALUES ($nama','$email','$password')";
 
  	$exeQuery = mysqli_query($konek, $query); 
 
